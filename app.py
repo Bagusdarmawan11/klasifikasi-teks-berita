@@ -6,7 +6,7 @@ import numpy as np
 
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 
-st.set_page_config(page_title="CNN News Topic Classifier", layout="centered")
+st.set_page_config(page_title="Klasifikasi Kategori Berita Menggunakan Perceptron", layout="centered")
 
 MODEL_PATH = "cnn_tfidf_perceptron.joblib"
 
