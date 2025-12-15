@@ -6,7 +6,7 @@ import numpy as np
 
 from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
 
-st.set_page_config(page_title="Klasifikasi Kategori Berita Menggunakan Perceptron", layout="centered")
+st.set_page_config(page_title="Klasifikasi Teks Kategori Berita Menggunakan Perceptron", layout="centered")
 
 MODEL_PATH = "cnn_tfidf_perceptron.joblib"
 
@@ -66,7 +66,7 @@ def predict_with_confidence(text: str, use_stopwords: bool, remove_en: bool):
     return pred, conf_map, t
 
 # ---------- UI ----------
-st.title("📰 CNNIndonesia Topic Classifier (Perceptron)")
+st.title("📰 Klasifikasi Teks Kategori Berita Menggunakan Perceptron")
 st.write("Masukkan teks berita, lalu sistem memprediksi kategorinya: nasional/olahraga/ekonomi/internasional.")
 
 # kontrol kecil biar kamu bisa debug kenapa “nggak akurat”
